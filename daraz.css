@@ -1,33 +1,444 @@
-body{
-    background-color: #f2f2f2;
-    color: #f2f2f2;
- font-family: 'Inter', sans-serif;
-      margin: 0px;
-    padding: 0rem 0rem 0rem 0rem;
+body {
+  background-color: rgb(245, 245, 245);
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  margin: 0px;
+  padding: 0rem 0rem 0rem 0rem;
 }
-.Navbar{
-    background-color:rgb(248,86,6);
-    height: 50px;
-    width: 100%;
-    position: fixed;
-  padding: 0rem ;
-    box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
-     display: flex;
+.Navbar {
+  background-color: rgb(248, 86, 6);
+  height: 5.5rem;
+  width: 100%;
+  position: sticky;
+  top: 0px;
+  padding: 0rem;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
-.Nabtop{
-    width: 100%;
-    display: flex; 
-    font-size: 0.94rem;
+.Navtop {
+  display: flex;
+  font-size: 0.85rem;
+  justify-content: space-between;
+  padding: 0rem 10rem;
+}
+.nav_top_left {
+  display: flex;
+  font-size: 0.8rem;
+}
+.nav_top_rightdiv {
+  display: flex;
+  align-items: center;
+  width: 9rem;
+  background-color: rgba(0, 0, 0, 0.336);
+  border-radius: 5px;
+  height: 1.7rem;
+  justify-content: space-around;
+}
+.logoimage img {
+  height: 1rem;
+}
+.nav_top_elements {
+  margin: 0.4rem 0.9rem 0rem 0rem;
+}
+/* Navbar bottom part */
+.Navbottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 10rem;
+}
+.DarazLogo img {
+  height: 3.2rem;
+}
+.searchbar {
+  display: flex;
+  align-items: center;
+  width: 45rem;
+  height: 1.8rem;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 13px;
+  padding: 5px;
+}
+
+.searchbar input[type="text"] {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 5px;
+}
+
+.searchbar i.fas.fa-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  background-color: rgba(248, 87, 6, 0.242);
+  padding: 5px;
+  border-radius: 4px;
+  color: rgb(248, 86, 6);
+}
+.userAccount {
+  font-size: 0.92rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 20rem;
+}
+.login {
+  padding-right: 10px;
+  border-right: #ffffff solid 2px;
+}
+.cart {
+  font-size: 25px;
+}
+.categories {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 8rem;
+  font-size: 0.87rem;
+  font-weight: 600;
+}
+.main_categories {
+  display: flex;
+  color: rgb(26, 156, 183);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+.hershey {
+  color: black;
+}
+.main {
+  margin: 1rem 0rem;
+  padding: 0rem 10rem;
+}
+.main_categories_elements {
+  padding: 0rem 0.5rem;
+}
+.main_categories_elements::after {
+  content: ">";
+  margin-left: 0.5rem;
+  color: black;
+}
+.main_Product {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  padding: 1rem;
+}
+.mainimage img {
+  height: 25rem;
+}
+.mainimage {
+   
+  border-bottom: #0000003b solid 1px;
+}
+.optionalimages {
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.optionalimagesimg img {
+  height: 4rem;
+}
+.activeimg {
+  border: 1px solid rgb(248, 86, 6);
+}
+.flashsale {
+  color: rgb(255, 255, 255);
+  display: flex;
+
+  justify-content: space-between;
+  width: 30rem;
+  height: 2rem;
+  border: 1px solid rgb(255, 21, 92);
+  border-radius: 2rem;
+}
+.flashsaletext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.9rem;
+  font-weight: 900;
+  width: 10rem;
+  background-color: rgb(255, 21, 92);
+  border-radius: 2rem;
+}
+.flashsaletime {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  color: rgb(0, 0, 0);
+}
+.sold {
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  font-size: 0.8rem;
+}
+.soldicon {
+  width: 5rem;
+  height: 0.5rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(
+    to right,
+    coral 3rem,
+    rgba(255, 127, 80, 0.467) 3rem
+  );
+  background-clip: content-box;
+}
+.producttitle {
+  margin-top: 1rem;
+  font-weight: 500;
+  width: 76%;
+  display: flex;
+  color: #000;
+  font-size: 1.4rem;
+}
+.productdetails {
+  padding-bottom: 2rem;
+  border-bottom: #0000003b solid 1px;
+}
+.producttitle img {
+  height: 1.5rem;
+}
+.productinformation{
+    margin-left: 2rem;
+}
+.ratesection {
+  display: flex;
+  justify-content: space-between;
+}
+.rating {
+  display: flex;
+  align-items: center;
+  width: 10rem;
+  font-size: 0.8rem;
+  color: rgb(255, 216, 0);
+}
+.ratingtext {
+  color: rgb(26, 156, 183);
+}
+.share i {
+  margin-left: 1rem;
+  font-size: 1.4rem;
+  color: rgb(122, 122, 122);
+}
+.branddetails {
+  display: flex;
+  align-items: center;
+  width: 30rem;
+  font-size: 0.9rem;
+  color: rgb(122, 122, 122);
+  text-decoration: none;
+}
+.brand1 {
+  padding-right: 0.7rem;
+  border-right: #0000003b solid 2px;
+}
+.brand2 {
+  padding-left: 0.7rem;
+}
+a {
+  color: rgb(100, 198, 236);
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(58, 114, 136);
+  text-decoration: underline;
+}
+.productprice {
+  margin-top: 1.1rem;
+}
+.price {
+  font-size: 2rem;
+  color: rgb(248, 86, 6);
+}
+.pastprice {
+  display: flex;
+}
+.pricecut {
+  color: #686868;
+  text-decoration: line-through;
+}
+.discount {
+  margin: 0rem 0.5rem;
+  color: #323232;
+}
+.promotion {
+  margin-top: 1rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  color: rgb(94, 94, 94);
+}
+.promotion_min {
+  margin-left: 1rem;
+  color: white;
+  background-color: rgb(245, 114, 36);
+  font-size: 0.85rem;
+  padding: 0.5rem;
+  border-radius: 0rem 100rem 1rem 0rem;
+}
+.quantity {
+  margin-top: 2rem;
+  display: flex;
+  color: #000;
+  align-items: center;
+}
+.quantitytext {
+  color: rgb(0, 0, 0);
+  margin-right: 1rem;
+}
+.quantity button {
+  margin: 0rem 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+}
+.addtocart {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.addtocart button {
+  border: none;
+  background-color: rgb(245, 114, 36);
+  color: white;
+  width: 48%;
+  height: 2.5rem;
+  font-size: 1.4rem;
+}
+.addtocart button:first-child {
+  background-color: rgb(42, 187, 232);
+}
+.delivery ,.service {
+  display: flex;
+  color: rgb(153, 153, 153);
+  justify-content: space-between;
+  width: 20rem;
+  font-size: 0.9rem;
+
+}
+.service{
+    margin-top: 1rem;
+}
+.otherdetails{
+    margin-left: 1rem;
+}
+.otherdetailsfirst{
+    padding: 1rem;
+    background-color: #FAFAFA;
+}
+.location{
+    display: flex;
     justify-content: space-between;
+    font-size: 1rem;
+    color: #000;
+    padding: 1rem 0rem;
+    border-bottom: #7070703b solid 1px;
 }
-.nav_top_left { 
+.locationicon{
+    font-size: 1.6rem;
+    color: #686868;
+}
+.locationtext{
+
+    width: 14rem;
+}
+.locationchange{
+    color: rgb(100, 198, 236);
+}
+.verified ,.Authentic ,.returnpolicy{
+    display: flex;
+     margin-top: 0.5rem;
+  
+}
+.mainverifiedtext{
+    font-size: 0.95rem;
+    color: rgb(245, 114, 36);
+}
+.mainAuthentictext{
+    font-size: 0.95rem;
+    color: rgb(68,12,137);
+}
+.mainreturnpolicytext{
+ font-size: 0.95rem;
+    color: rgb(68,12,137);
+}
+
+.verified img ,.Authentic img ,.returnpolicy img,.warranty img{
+ height: 1.5rem;
+}
+.verifiedtext,.Authentictext,.returnpolicytext,.warrantytext{
+    margin-left: 1.5rem;
+}
+.minverifiedtext,.minAuthentictext,.returnpolicytext{
+    font-size: 0.8rem;
+    color: rgb(123, 121, 120);
+}
+.warranty{
+    display: flex;
+    margin-top: 0.5rem;
+    color: rgb(71, 71, 71);
+}
+.otherdetailssecond{
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #FAFAFA;
+    color: #000;
+}
+.supplier{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+
+}
+.soldy{
+    color: rgb(134, 134, 134);
+    font-size: 0.7rem;
+}
+.supplierchat{
+    color: rgb(25,156,183);
+}
+.supplierimg img{
+    height: 1.2rem;
+}
+.seller-details{
+    padding-bottom: 1rem;
+ 
+}
+.positiverating ,.shipping,.chatrating{
+  width: 33%;
+  height: 7rem;
+  border: #e9e9e9 solid 1px;
+}
+.sellerstats{
+    margin-top: 1rem;
     display: flex;
 }
-.nav_top_rightdiv{
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.336);
-    border-radius: 5px;
+.positiveratingtext ,.shippingtext,.chatratingtext{ 
+    font-size: 0.79rem;
+    color: rgb(156, 156, 156);
 }
-.logoimage img{ 
-     height: 2rem;
+.positiveratingnumber,.shippingnumber,.chatratingnumber{ 
+    margin-top: 1rem;   
+    display: flex;
+    justify-content: first baseline;
+    font-size: 1.6rem;
+    color: rgb(0, 0, 0);
+}
+.visitstore{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color:rgb(113,164,183);
 }
