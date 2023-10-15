@@ -9,7 +9,7 @@ body {
 .Navbar {
   background-color: rgb(248, 86, 6);
   height: 5.5rem;
-  width: max-content;
+  width: 100%;
   position: sticky;
   top: 0px;
   padding: 0rem;
@@ -445,7 +445,7 @@ a:hover {
 }
 
 .product_detail_below{
-  width: 97%;
+  width: 70rem;
  margin: 0rem 2rem 1rem 0rem;
 overflow-x: scroll;
   background-color: rgb(255,255,255);
@@ -510,7 +510,7 @@ overflow-x: scroll;
   margin: 1rem  0rem 0rem 10rem;
 }
 .product_recommendation{
-  height: 60rem;
+  height: max-content;
  width: 30rem;
  background-color: rgb(255,255,255);
 }
@@ -773,30 +773,94 @@ border-radius: 4px;
 }
 .pav_products{
   display: flex;
+  
+}
+.bottom{
+    margin-top:2rem ;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+ background-color:rgb(245,245,245);
 }
 .footer{
-  margin-top:2rem ;
-  background-color:rgb(245,245,245);
+    width: 80%;
+  display: flex;
+  justify-content: space-between;
   color: #fff;
-  padding: 1rem 0rem 0rem 11rem;
   ;
 }
-.frcc_title,.frewd_title{
+.frcc_title,.frewd_title, .frc_title ,.di_title,.pm_title,.v_title,.fle_title,.flfu_title{
    margin-top:1rem ;
   font-size: 1.3rem;
   font-weight: 400;
   color:rgb(248,86,6);
 }
-.fr_customercare ul ,.fr_Earn_with_daraz ul{
+.fr_customercare ul ,.fr_Earn_with_daraz ul, .footer_right_centre ul{
 padding: 0px;
 margin-left: -1rem;
 display: flex;
 justify-content: flex-start;
 flex-direction: column;
 }
-.fr_customercare ul li,.fr_Earn_with_daraz ul li{
+.fr_customercare ul li,.fr_Earn_with_daraz ul li , .footer_right_centre ul li{
   list-style: none;
   font-size: 0.99rem;
-  
   color: #000;
 }
+.diflags{
+  display: flex;
+}
+.diflag1 img , .diflag2 img{
+  height: 2rem;
+  width: 2rem;
+  border-radius: 100%;
+}
+.diflag1,.diflag2{
+  display: flex;
+  flex-direction: column;
+}
+.pakistan ,.sirlanka ,.nepal,.Bangladesh,.myanmar{
+  padding: 2%;
+  display: flex;
+  align-items: center;
+}
+.pakistan_text,.sirlanka_text,.nepal_text,.Bangladesh_text,.myanmar_text{
+  margin-left: 1rem;
+  font-size: 0.99rem;
+  color: #000;
+}
+.pm_images{
+  display: flex;
+ 
+}
+.pm_images img{
+  height: 2rem;
+  width: 4rem;
+}
+.verifiedbyy img {
+   height: 2rem;
+  width: 4rem;
+}
+.fle_images{
+  display: flex;
+}
+.flei2 img{
+   padding: 0.3rem;
+  height: 2rem;
+  width: 6rem;
+}
+.flei1 img{
+ 
+  height: 7rem;
+  width: 7rem;
+}
+.flei2{
+  display: flex;
+  flex-direction: column;
+}
+.flfu_image img{
+height: 2rem;
+  width: 2rem;
+  border-radius: 100%;
+}
+
