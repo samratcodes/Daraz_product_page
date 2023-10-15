@@ -9,7 +9,7 @@ body {
 .Navbar {
   background-color: rgb(248, 86, 6);
   height: 5.5rem;
-  width: 100%;
+  width: max-content;
   position: sticky;
   top: 0px;
   padding: 0rem;
@@ -445,7 +445,7 @@ a:hover {
 }
 
 .product_detail_below{
-  width: 70rem;
+  width: 97%;
  margin: 0rem 2rem 1rem 0rem;
 overflow-x: scroll;
   background-color: rgb(255,255,255);
@@ -510,7 +510,7 @@ overflow-x: scroll;
   margin: 1rem  0rem 0rem 10rem;
 }
 .product_recommendation{
-  height: max-content;
+  height: 60rem;
  width: 30rem;
  background-color: rgb(255,255,255);
 }
